@@ -1,0 +1,33 @@
+version: '3.7'
+
+services:
+  app:
+    build: .
+    ports:
+      - 4000:4000
+    depends_on:
+      - mongodb
+    volumes:
+      - '.:/usr/src/app'
+      - elixir-mix:/root/.mix
+
+  mongodb:
+    image: mongo:latest
+    environment:
+      - MONGO_DATA_DIR=/data/db
+      - MONGO_LOG_DIR=/dev/null
+      - MONGODB_USER="root"
+      - MONGODB_PASS="root"
+    volumes:
+      - mongodb-data:/data/db
+    ports:
+        - 27017:27017
+    command: mongod --bind_ip_all --smallfiles --logpath=/dev/null # --quiet
+
+volumes:
+  elixir-mix:
+  mongodb-data:
+
+networks:
+  local:
+

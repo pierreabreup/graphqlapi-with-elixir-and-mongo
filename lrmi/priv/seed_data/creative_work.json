@@ -1,0 +1,109 @@
+[
+  {
+  "url": "http://my-content-host.test.com/content/112121",
+  "typeOf": "CreativeWork",
+  "dateCreated": "2017-08-24T13:58:33Z",
+  "dateModified": "2019-01-02T12:22:07Z",
+  "identifier": {
+    "value": "112121",
+    "typeOf": "PropertyValue",
+    "propertyID": "ContentHost-ContentID"
+  },
+  "educationalAlignment": [
+    {
+      "typeOf": "AlignmentObject",
+      "alignmentType": "educationLevel",
+      "educationalFramework": "Diretrizes e Bases da Educação Nacional (LDB)",
+      "targetName": "Elementary school 1",
+      "targetURL": "http://portal.mec.gov.br/secretaria-de-educacao-basica"
+    },
+    {
+      "typeOf": "AlignmentObject",
+      "alignmentType": "educationalSubject",
+      "educationalFramework": "Diretrizes e Bases da Educação Nacional (LDB)",
+      "targetName": "Mathematic",
+      "targetURL": "http://portal.mec.gov.br/secretaria-de-educacao-basica"
+    }
+  ],
+  "name": "My content about mathematic, elementary year 1",
+  "interactivityType": "Expositive",
+  "learningResourceType": "Didactic Material",
+  "inLanguage": {
+    "typeOf": "Language",
+    "name": "Portuguese",
+    "alternateName": "pt-br"
+  },
+  "additionalProperty": [
+    {
+      "typeOf": "PropertyValue",
+      "propertyID": "Collection-Name",
+      "value": "MyCollection"
+    }
+  ],
+  "publisher": {
+    "typeOf": "Organization",
+    "name": "MyPublisher"
+  },
+  "author": [
+    {
+      "typeOf": "Person",
+      "name": "Johon Smith",
+      "url": "http://my-user-host.test.com/user/122"
+    }
+  ]
+},
+{
+  "url": "http://my-content-host.test.com/content/212121",
+  "typeOf": "CreativeWork",
+  "dateCreated": "2017-08-24T13:58:33Z",
+  "dateModified": "2019-01-02T12:22:07Z",
+  "identifier": {
+    "value": "212121",
+    "typeOf": "PropertyValue",
+    "propertyID": "ContentHost-ContentID"
+  },
+  "educationalAlignment": [
+    {
+      "typeOf": "AlignmentObject",
+      "alignmentType": "educationLevel",
+      "educationalFramework": "Diretrizes e Bases da Educação Nacional (LDB)",
+      "targetName": "Elementary school 2",
+      "targetURL": "http://portal.mec.gov.br/secretaria-de-educacao-basica"
+    },
+    {
+      "typeOf": "AlignmentObject",
+      "alignmentType": "educationalSubject",
+      "educationalFramework": "Diretrizes e Bases da Educação Nacional (LDB)",
+      "targetName": "History",
+      "targetURL": "http://portal.mec.gov.br/secretaria-de-educacao-basica"
+    }
+  ],
+  "name": "My content about History, elementary year 2",
+  "interactivityType": "Expositive",
+  "learningResourceType": "Didactic Material",
+  "inLanguage": {
+    "typeOf": "Language",
+    "name": "Portuguese",
+    "alternateName": "pt-br"
+  },
+  "additionalProperty": [
+    {
+      "typeOf": "PropertyValue",
+      "propertyID": "Collection-Name",
+      "value": "MyCollection"
+    }
+  ],
+  "publisher": {
+    "typeOf": "Organization",
+    "name": "MyPublisher"
+  },
+  "author": [
+    {
+      "typeOf": "Person",
+      "name": "Sara Smith",
+      "url": "http://my-user-host.test.com/user/222"
+    }
+  ]
+}
+
+]
