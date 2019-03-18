@@ -6,6 +6,8 @@ This project is a guide for anyone who tries to use mongodb with phoenixframewor
 
 The data sample is on LRMI format (http://lrmi.dublincore.org/). I used this format because is pretty simple to explain the project and because I'm using in production at my job.
 
+In this Medium article https://medium.com/@pierreabreu/how-to-create-a-graphql-api-with-elixir-and-mongodb-f3a9e0602832 I explain in deep the project, design code and other things.
+
 # How to use?
 
 After you clone this project, follow the steps:
@@ -93,6 +95,11 @@ When you have to finish your job, go to the terminal session where you've run `m
 
 ##### IMPORTANT!
 when you run ```make run``` in the first time, the docker image will be created. In the next times, docker compose will use the image.
+
+# Automated Testing
+To run the test, go to the console when I've run `make run`, go to the lrmi projet `cd lrmi` and type `mix test`
+
+I didn't create tests cases for all code, I've just created for more important areas of the project.
 
 # FAQ
 
