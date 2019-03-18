@@ -9,10 +9,8 @@ config :lrmi, LrmiWeb.Endpoint,
 # Print only warnings and errors during test
 config :logger, level: :warn
 
-# Configure your database
-config :lrmi, Lrmi.Repo,
-  username: "postgres",
-  password: "postgres",
+config :lrmi, :db_config,
+  name: :mongo,
   database: "lrmi_test",
-  hostname: "localhost",
-  pool: Ecto.Adapters.SQL.Sandbox
+  seeds: ["mongodb:27017"],
+  pool: DBConnection.Poolboy

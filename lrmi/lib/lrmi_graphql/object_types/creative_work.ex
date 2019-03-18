@@ -20,8 +20,6 @@ defmodule LrmiGraphql.Schema.ObjectTypes.CreativeWork do
     field :learning_resource_type, non_null(:string)
     field :position, :integer
     field :description, :string
-    field :thumbnail_url, :string
-    field :license, :string
     field :educational_use, :string
     field :interactivity_type, :string
     field :url, :string

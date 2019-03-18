@@ -8,9 +8,7 @@ defmodule Lrmi.Resources.CreativeWork do
     field :url,                  :string
     field :typeOf,               :string
     field :name,                 :string
-    field :license,              :string
     field :description,          :string
-    field :thumbnailUrl,         :string
     field :educationalUse,       :string
     field :interactivityType,    :string
     field :learningResourceType, :string
@@ -20,8 +18,6 @@ defmodule Lrmi.Resources.CreativeWork do
     field :identifier,           :map
     field :publisher,            :map
     field :inLanguage,           :map
-    field :audience,             :map
-    field :isPartOf,             :map
     field :author,               {:array, :map}
     field :additionalProperty,   {:array, :map}
     field :educationalAlignment, {:array, :map}
@@ -34,15 +30,11 @@ defmodule Lrmi.Resources.CreativeWork do
         :name,
         :typeOf,
         :author,
-        :license,
-        :isPartOf,
-        :audience,
         :position,
         :publisher,
         :inLanguage,
         :identifier,
         :description,
-        :thumbnailUrl,
         :dateCreated,
         :dateModified,
         :educationalUse,
