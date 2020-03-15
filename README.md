@@ -1,16 +1,19 @@
 # What is it?
 
-This project is a Graphlql API made with elixir, phoenixframework and mongodb on docker environment. The following tools already installed (last release version): mix, hex, phx_new
+This project is a Graphlql API made with elixir, phoenix framework and mongodb on docker environment. The following tools are installed: 
+* mix 
+* hex 
+* phx_new
 
-This project is a guide for anyone who tries to use mongodb with phoenixframework. I've created it above docker container because is more easy for me, but if you already have elixir environment in your local machine, feel free to run the project in your machine. Remember yourself, in this situation, you have to setup a mongodb server by on your own.
+This project is a guide for anyone who tries to use mongodb with phoenix framework. I've created it above docker container because is more easy for me, but if you already have elixir environment in your local machine, feel free to run the project in your machine. Remember yourself, in this situation, you have to setup a mongodb server by on your own.
 
-The data sample is on LRMI format (http://lrmi.dublincore.org/). I used this format because is pretty simple to explain the project and because I'm using in production at my job.
+The data sample was built on LRMI format (http://lrmi.dublincore.org/). I used this format because is pretty simple to explain the project and because I'm using in production at my job.
 
-In this Medium article https://medium.com/@pierreabreu/how-to-create-a-graphql-api-with-elixir-and-mongodb-f3a9e0602832 I explain in deep the project, design code and other things.
+In this Medium article https://medium.com/@pierreabreu/how-to-create-a-graphql-api-with-elixir-and-mongodb-f3a9e0602832 I explain deeply the project, design code and other things.
 
-# How to use?
+# How to use it?
 
-After you clone this project, follow the steps:
+After you've clone this project, follow the steps:
 - open a terminal session in your terminal tool (Iterm, Terminal, Putty)
 - go to the folder where you've cloned the project (Ex.: ```cd graphqlapi-with-elixir-and-mongo```)
 - type the command: ```make run```
@@ -94,10 +97,10 @@ query {
 When you have to finish your job, go to the terminal session where you've run `make run` and stop cowboy server pressing CTR+C twice. After that, type `exit` and at last `make down`
 
 ##### IMPORTANT!
-when you run ```make run``` in the first time, the docker image will be created. In the next times, docker compose will use the image.
+when you run ```make run``` at the first time, the docker image will be created. In the next times, docker compose will use the same image.
 
 # Automated Testing
-To run the test, go to the console when I've run `make run`, go to the lrmi projet `cd lrmi` and type `mix test`
+To run the test, go to the console when I've run `make run`, go to the LRMI project `cd lrmi` and type `mix test`
 
 I didn't create tests cases for all code, I've just created for more important areas of the project.
 
